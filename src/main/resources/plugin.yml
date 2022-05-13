@@ -1,0 +1,8 @@
+name: ADPlugin
+version: 1.0
+main: me.LucaD2811.ADPlugin.ADPlugin
+api-version: 1.18
+
+commands:
+  ad:
+    description: Command to send an ad.
