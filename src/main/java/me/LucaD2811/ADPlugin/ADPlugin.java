@@ -56,7 +56,7 @@ public final class ADPlugin extends JavaPlugin {
             cooldown.add(player.getUniqueId());
 
             Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(this, () -> cooldown.remove(player.getUniqueId()), getConfig().getInt("AdCooldownInSeconds") * 20L);
-            Bukkit.getServer().broadcastMessage(ChatColor.GRAY + "[" + ChatColor.GOLD + "AD" + ChatColor.GRAY + "] " + ChatColor.YELLOW + ad);
+            Bukkit.getServer().broadcastMessage(ChatColor.GRAY + "[" + ChatColor.GOLD + "AD" + ChatColor.GRAY + "] " + player.getName() + ": " + ChatColor.YELLOW + ad);
         }
         return false;
     }
